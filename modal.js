@@ -1,11 +1,12 @@
-var clickButton = document.getElementById("clickButton");
 var modal = document.getElementById("modalDiv");
+var modalMessage = document.getElementById("modalMessage");
+
 var yesButton = document.getElementById("yesButton");
 var cancelButton = document.getElementById("cancelButton");
-var resultText = document.getElementById("resultText");
 
-clickButton.onclick = function() {
+function openModal(message) {
     modal.style.display = "block";
+    modalMessage.innerHTML = message;
 }
 
 yesButton.onclick = function() {
